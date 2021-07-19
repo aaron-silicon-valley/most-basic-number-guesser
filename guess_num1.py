@@ -12,6 +12,7 @@ def guess_the_number():
   while True:
 
     if g.isalpha() == True:
+      # small bug
       print('yo this is for number not for {}'.format(g))
       g = input('enter the guess number '+ 'numbers are from {}: ')
     else:
