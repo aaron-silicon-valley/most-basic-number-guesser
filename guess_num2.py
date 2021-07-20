@@ -1,4 +1,5 @@
 import random
+
 def guess_the_number():
     l = list(range(1, 11))
     num_l = random.choice(l)
@@ -18,5 +19,6 @@ def guess_the_number():
                 # print(guess_num)
                 g = input('enter the guess number: ')
                 continue
+
 guess_the_number()
 
