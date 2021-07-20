@@ -2,11 +2,8 @@ import random
 def guess_the_number():
     l = list(range(1, 11))
     num_l = random.choice(l)
-
     guess_num = num_l
-
     g = input('enter the guess number, '+ 'numbers are from {}: '.format(l))
-
     while True:
         if g.isnumeric() == False:
             print(f'yo this is for numbers not for {g}')
@@ -21,8 +18,5 @@ def guess_the_number():
                 # print(guess_num)
                 g = input('enter the guess number: ')
                 continue
-
-
-
 guess_the_number()
 
