@@ -10,7 +10,7 @@ def guess_the_number():
     g = input('enter the guess number, '+ 'numbers are from {}: '.format(l))
 
     while True:
-        if g.isalpha() == True:
+        if g.isnumeric() == False:
             print(f'yo this is for numbers not for {g}')
             g = input('enter the guess number '+ 'numbers are from {}: '.format(l))
         else:
