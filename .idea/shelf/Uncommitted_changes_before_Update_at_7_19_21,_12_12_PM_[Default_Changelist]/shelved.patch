@@ -1,0 +1,29 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1626714386533)
++++ b/.idea/vcs.xml	(date 1626714386533)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: guess_num2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guess_num2.py b/guess_num2.py
+new file mode 100644
+--- /dev/null	(date 1626714733483)
++++ b/guess_num2.py	(date 1626714733483)
+@@ -0,0 +1,1 @@
++print('hello')
+\ No newline at end of file

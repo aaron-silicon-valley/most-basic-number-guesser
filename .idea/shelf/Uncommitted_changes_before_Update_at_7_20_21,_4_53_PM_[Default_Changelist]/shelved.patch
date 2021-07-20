@@ -1,0 +1,17 @@
+Index: guess_num2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import random\n# workin\ndef guess_the_number():\n\n    l = list(range(1, 11))\n    num_l = random.choice(l)\n\n    guess_num = num_l\n\n    g = input('enter the guess number, '+ 'numbers are from {}: '.format(l))\n\n    while True:\n        if g.isnumeric() == False:\n            print(f'yo this is for numbers not for {g}')\n            g = input('enter the guess number '+ 'numbers are from {}: '.format(l))\n        else:\n            if int(g) == guess_num:\n                print('you got the number congratulations')\n                print(guess_num)\n                break\n            else:\n                print('sorry try again')\n                # print(guess_num)\n                g = input('enter the guess number: ')\n                continue\n\n\n\nguess_the_number()\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guess_num2.py b/guess_num2.py
+--- a/guess_num2.py	(revision 5f1494de2bc073f1011feb9fe2121d5729f231bd)
++++ b/guess_num2.py	(date 1626817981153)
+@@ -1,5 +1,5 @@
+ import random
+-# workin
++# working
+ def guess_the_number():
+ 
+     l = list(range(1, 11))
