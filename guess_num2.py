@@ -1,7 +1,5 @@
 import random
-# working
 def guess_the_number():
-
     l = list(range(1, 11))
     num_l = random.choice(l)
 
