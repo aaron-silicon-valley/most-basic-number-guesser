@@ -8,8 +8,8 @@ def guess_the_number():
     while True:
         if g.isnumeric() == False:
             print(f'yo this is for numbers not for {g}')
-            g = input('enter the guess number '+ 'numbers are from {}: '.format(l))
-        else:
+            g = input('enter the guess number ' + 'numbers are from {}: '.format(l))
+        elif g.isnumeric() == True:
             if int(g) == guess_num:
                 print('you got the number congratulations')
                 print(guess_num)
@@ -19,6 +19,10 @@ def guess_the_number():
                 # print(guess_num)
                 g = input('enter the guess number: ')
                 continue
+        elif g.isspace():
+            print('you know that this is a game for numbers and not spaces')
+            g = input('enter the guess number ' + 'numbers are from {}: '.format(l))
+
 
 guess_the_number()
 
