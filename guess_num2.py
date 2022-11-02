@@ -17,7 +17,6 @@ def guess_the_number():
                 break
             else:
                 print('sorry try again')
-                # print(guess_num)
                 g = input('enter the guess number: ')
                 continue
 
