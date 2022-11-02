@@ -1,14 +1,15 @@
 import random
 
+
 def guess_the_number():
     l = list(range(1, 11))
     num_l = random.choice(l)
     guess_num = num_l
-    g = input('enter the guess number, '+ 'numbers are from {}: '.format(l))
+    g = input('enter the guess number, ' + 'numbers are from {}: '.format(l))
     while True:
-        if g.isnumeric() == False:
+        if not g.isnumeric():
             print(f'yo this is for numbers not for {g}')
-            g = input('enter the guess number '+ 'numbers are from {}: '.format(l))
+            g = input('enter the guess number ' + 'numbers are from {}: '.format(l))
         else:
             if int(g) == guess_num:
                 print('you got the number congratulations')
@@ -20,5 +21,5 @@ def guess_the_number():
                 g = input('enter the guess number: ')
                 continue
 
-guess_the_number()
 
+guess_the_number()
